@@ -12,3 +12,7 @@ ClassRoom datamatiker1b = new ClassRoom()
     StudentList = students,
     Semester_Start = new DateTime(2024, 8, 26)
 };
+
+Console.WriteLine(datamatiker1b);
+Console.WriteLine(datamatiker1b.StudentList.First().Season());
+Console.WriteLine(datamatiker1b.StudentList.Last().Season());

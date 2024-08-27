@@ -16,5 +16,15 @@ namespace ClassRoomNet60
         {
             StudentList = new List<Student>();
         }
+
+        public override string ToString()
+        {
+            string students = "";
+            foreach(Student student in StudentList)
+            {
+                students += student.ToString();
+            }
+            return $"{{{nameof(Class_Room)}={Class_Room}, {nameof(StudentList)}={students}, {nameof(Semester_Start)}={Semester_Start.ToString()}}}";
+        }
     }
 }
